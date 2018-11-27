@@ -4,11 +4,63 @@ h2 {
     font-weight: 400;
     line-height: 1.31;
     color: #444;
-    margin-top: 15px;;
+    margin-top: 15px;
+    text-align: center;
+}
+h1 {
+    font-family: Raleway;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 800;
+    line-height: 1.17;
+    letter-spacing: 1.5px;
 }
 p {
     font-family: Lato;
     font-size: 16px;
     line-height: 1.7;
     color:#5c5d67;
+}
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+}
+.button {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #f70966;
+    border-radius: 5px;
+    padding: 11px 20px;
+    display: inline-block;
+    
+}
+.button a {
+    text-decoration: none;
+    color: white;
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+}
+.container {
+    width: 640px;
+    padding: 0 25px;
+}
+.benefits h2 {
+    font-size: 20px;
+    width: 573px;
+    text-align: center;
+    margin: 50px 0;
+}
+h3 {
+    color: $compTxtCol;
+    font-size: 14px;
+    font-family: Raleway;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 1.7px;
+    text-align: center;
+    text-transform: uppercase;
 }
