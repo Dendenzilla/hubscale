@@ -28,13 +28,18 @@ p {
     overflow: hidden;
 }
 .button {
+
     text-align: center;
     text-transform: uppercase;
     background-color: #f70966;
     border-radius: 5px;
     padding: 11px 20px;
     display: inline-block;
+    width: fit-content;
     
+}
+img {
+    display: block;
 }
 .button a {
     text-decoration: none;

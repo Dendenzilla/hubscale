@@ -1,16 +1,19 @@
 header {
     width: 100%;
+    height: $headerH;
     padding: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background-color: white;
 }
 header img {
     width: 170px;
-}
-header nav {
-    display: none;
 }
 .burger {
     width: 25px;
@@ -26,3 +29,57 @@ header nav {
     height: 2px;
     background-color: $compCol;
 }
+
+///////////// ADDED
+
+.nav__hidden {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 4;
+    font-family: Lato;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #F0F0F2;
+  }
+  .nav__hidden a {
+    padding: 30px 30px 0;
+    text-decoration: none;
+    color: black;
+  }
+  //////////// MEDIA 
+header .button {
+    align-self: center;
+}
+  @media screen and (max-width: 1024px) {
+    .nav__hidden {
+      position: fixed;
+      width: 100%;
+      top:-100vh;
+      left:0;
+      background: white;
+      flex-direction: column;
+      justify-content: center;
+      transition: .5s all ease-in-out;
+      z-index: 4;
+    }
+    .nav__hidden a {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    }
+    .nav__hidden.active {
+      top:$headerH;
+    }
+    .burger {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .burger.active {
+      border-color:$compCol;
+    }
+    .burger.active .burger__item{
+      background-color:$compCol;
+    }
+  }
